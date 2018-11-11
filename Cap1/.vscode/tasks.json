@@ -8,7 +8,7 @@
             "type": "shell",
             "command": "g++",
             "args":[
-                "-g", "pr2_21.cpp"
+                "-g", "pr2_27.cpp"
             ],
             "group": 
             {
