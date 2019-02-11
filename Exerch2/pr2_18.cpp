@@ -20,7 +20,7 @@ int main()
     max = number2;
     cout << "El mayor es: " << max << endl;
 
-    if(number1=number2)
+    if(number1==number2)
     cout << "Son Iguales";
         return 0;
 

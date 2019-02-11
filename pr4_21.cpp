@@ -7,7 +7,8 @@ int main()
 {
     int cuenta = 1; // inicializa cuenta
     while ( cuenta <= 10 ) // itera 10 veces
-      {  // imprime una línea de texto    
+      {  // imprime una línea de texto   
+       cout << cuenta << endl; 
       cout << ( cuenta % 2 ? "****" : "++++++++" ) << endl;   
       ++cuenta; // incrementa cuenta 16  
       } // fin de while
