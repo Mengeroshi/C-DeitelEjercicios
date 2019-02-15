@@ -17,15 +17,7 @@ class Fecha
            
             void setDay(int day)
             {
-                if(day>0 && day<13)
-                {
                     Dia = day;
-                }
-                else
-                {
-                    day=1;
-                    Dia= day;
-                }
             }
 
             int getDay()
@@ -35,7 +27,15 @@ class Fecha
 
                 void setMonth(int month)
                 {
-                    Mes = month;
+                    if(month>=1 && month<13)
+                    {
+                        Mes = month;
+                    }
+                    else
+                    {
+                        month = 0;
+                        Mes = month;
+                    }
                 }
                 int getMonth()
                 {

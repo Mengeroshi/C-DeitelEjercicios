@@ -39,18 +39,23 @@ class Account
 int main()
 {
     Account mysaldo1(500);
+    Account mysaldo2(1000);
     
     cout << "El saldo de tu cuenta es " << mysaldo1.getBalance() << endl;
+    cout << "El saldo de tu cuenta es " << mysaldo2.getBalance() << endl;
     
     int montoAbono;
+    int montoRetiro;
 
-    cout << "Ingrese el monto que quiere abonar: $" << endl;
-    cin >> montoAbono;
-    cout << "Esta seguro que quiere abonar $" << montoAbono << endl;
+    cout << "Ingrese el monto que quiere abonar en la cuenta 1 y retirar en la cuenta2: $" << endl;
+    cin >> montoAbono >> montoRetiro;
+    cout << "Esta seguro que quiere abonar $" << montoAbono <<" y retirar $"<<montoRetiro<< endl;
 
     mysaldo1.credit( montoAbono);
+    mysaldo2.debit(montoRetiro);
 
-    cout << "Su saldo es de $" << mysaldo1.getBalance() << endl;
+    cout << "Su saldo en la cuenta 1 es de $" << mysaldo1.getBalance() << endl;
+    cout << "Su saldo en la cuenta 2 es de $" << mysaldo2.getBalance() << endl;
         
         return 0;
 }

@@ -17,20 +17,45 @@ int main()
      cout << "suma: " << suma << endl;
      int promedio = suma/3;
      cout << "promedio: " << promedio << endl;
+     int producto = number1*number2*number3;
+     cout << "producto: "<< producto << endl;
 
-     max = number1;
-     if(number1 < number2)
-     max = number2;
-     if (number2 < number3)
-     max =number3;
-     cout << "Mayor: " << max << endl;
+        
+        if(number1 > number2 & number1 > number3)
+        {
+        max = number1;
+        cout << "Mayor: " << max << endl;
+        }
+     
+        if (number2 > number1 & number2 > number3)
+        {
+        max =number2;
+        cout << "Mayor: " << max << endl;
+        }
 
-     min = number1;
-     if(number1 > number2)
-     min = number2;
-     if (number2 > number3)
-     min =number3;
-     cout << "Menor: " << min << endl;
+         if (number3 > number1 & number3 > number2)
+        {
+        max =number3;
+        cout << "Mayor: " << max << endl;
+        }
+        //lel
+          if (number1 < number2 & number1 < number3)
+        {
+        min =number1;
+        cout << "Menor: " << min << endl;
+        }
+           
+           if (number2 < number1 & number2 < number3)
+        {
+        min =number2;
+        cout << "Menor: " << min << endl;
+        }
+        
+        if (number3 < number1 & number3 < number2)
+        {
+        min =number3;
+        cout << "Menor: " << min << endl;
+        }
      
      return 0;
 }
