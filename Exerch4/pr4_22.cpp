@@ -3,18 +3,23 @@ using std::cout;
 using std::cin;
 using std::endl;
 
-int main()
+int main()  
 {
-    int x=11;
-    int y=9;
-    if ( x < 10 )
-    if ( y > 10 )  
-    cout << "*****" << endl;  
-    else  cout << "#####" << endl;  
-    cout << "$$$$$" << endl;
-    ///////////////////////////
+	 int fila = 10;
+	 int columna;
 
-    return 0;
+	 while(fila>=1)
+	 {
+		columna =1;
+		 	
+			 while(columna<=10)
+			 {
+				 cout <<(fila%2 ? "<":">");//si fila es impar(hay residuo)"<" else(es par)">"
+				 ++columna;
+			 }
+		--fila;
+		cout << endl;
+	 }
+	
+	return 0;
 }
-
-  

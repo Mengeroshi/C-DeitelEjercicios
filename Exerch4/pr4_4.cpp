@@ -10,15 +10,18 @@ int main()
 {
     x=1;
     suma = 0;
+    int enteros =0;
    
     cout << "suma es: " << suma;
+   
     while(x<=10)
     {
-         suma = suma+x;
-         ++x;
+         suma += x;
+         /*cout << suma << endl;*/;
+         x++;
 
     }
-        cout << suma << endl;
+       cout << suma << endl;
 
         return 0;
 }
